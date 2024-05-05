@@ -1,0 +1,10 @@
+services:
+	- App\Core\RouterFactory::createRouter
+	- App\Repository\PointOfSaleRepository
+	- App\Repository\OpeningHoursRepository
+
+search:
+	-	in: %appDir%
+		classes:
+			- *Factory
+			- *Facade

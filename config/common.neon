@@ -1,0 +1,23 @@
+parameters:
+
+application:
+	errorPresenter:
+		4xx: Error:Error4xx
+		5xx: Error:Error5xx
+	mapping: App\API\**Presenter
+
+database:
+	dsn: 'mysql:host=127.0.0.1;dbname=points_of_sale_api'
+	user: root
+	password: pass
+
+latte:
+	strictTypes: yes
+
+session:
+	expiration: 14 days
+
+di:
+	export:
+		parameters: no
+		tags: no
